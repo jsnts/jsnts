@@ -10,10 +10,10 @@ def calcdicriminante(a,b,c):
     return (b**2) - (4*a*c)
 
 def calculax1(a,b):
-    return (-b + (disc ** 0.5)/2*a)
+    return (-b + (discriminante ** 0.5)/2*a)
 
 def calculax2(a,b):
-    return (-b - (disc ** 0.5)/2*a)
+    return (-b - (discriminante ** 0.5)/2*a)
 
 print("\nBienvenido a la calculadora de ecuacionews cuadraticas")
 
