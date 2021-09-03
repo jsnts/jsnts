@@ -1,4 +1,8 @@
 #Autores: Regina Grimaldo (A00834044)
+#Jair Santos (A01026654)
+#Bruno Márquez Puig (A00834415)
+#
+
 #Este programa calcula el volumen 1 de un gas utilizando la ley de charles
 
 #Bienvenida
