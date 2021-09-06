@@ -1,13 +1,15 @@
 import math
-#Este programa utiliza la magnitud y direccion (angulo) de un vector para conseguir sus componentes en x y y
+#Este programa utiliza la magnitud y direccion (angulo) de un vector para conseguir sus componentes en X y Y
 
-#calculo del vector
+#convertir de grados a radianes
 def convertgrados(angulo):
     return math.radians(angulo)
 
+#calcular el componente x
 def calcvectorx(magnitud, angulo):
     return (magnitud*math.cos(angulo))
 
+#calcular el componente y
 def calcvectory(magnitud, angulo):
     return (magnitud*math.sin(angulo))
 
