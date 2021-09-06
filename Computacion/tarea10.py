@@ -25,8 +25,8 @@ componentex = calcvectorx(a,angulorad)
 componentey = calcvectory(a,angulorad)
 
 #output
-print("\nLa componente x de su vector es %5.2f " %(componentex))
-print("\nLa componente x de su vector es %5.2f " %(componentey))
+print("\nLa componente X de su vector es %5.2f " %(componentex))
+print("\nLa componente Y de su vector es %5.2f " %(componentey))
 
 #despedida
 print("\nGracias por usar la calculadora de vectores!!\n")
