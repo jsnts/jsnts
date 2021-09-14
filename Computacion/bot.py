@@ -34,7 +34,7 @@ async def on_ready():
     print(
         f'{bot.user} is connected to the following guild:\n'
         f'{guild.name}(id: {guild.id})'
-    )
+        )
 
 # funcion para contestar mensajes
 @bot.event
@@ -58,6 +58,45 @@ async def on_message(message):
             await message.channel.send(response)
 
     await bot.process_commands(message)
+
+@bot.command()
+async def play(ctx, url : str):
+    voiceChannel = discord.utils.get(ctx.guild.voice_channels, name="el_criko_lobby")
+    voice = discord.utils.get(bot.voice_clients, guild=ctx.guild)
+    if not voice.is_connected():
+        await voiceChannel.connect()
+
+@bot.colmmand()
+async def leave(ctx):
+    voice = discord.utils.get(bot.voice_clients, guild=ctx.guild)
+    if voice.is_connected():
+        await voice.disconnect()
+    else:
+        await ctx.send("The bot is not connected to a voice channel.")
+    
+@bot.command()
+async def pause(ctx):
+    voice = discord.utils.get(bot.voice_clients, guild=ctx.guild)
+    if voice.is_playing():
+        voice.pause()
+    else:
+        await ctx.send("Currently no audio is playing.")
+
+@bot.command()
+async def resume(ctx):
+    voice = discord.utils.get(bot.voice_clients, guild=ctx.guild)
+    if voice.is_paused():
+        voice.resume()
+    else:
+        await ctx.send("The audio is not paused.")
+    
+
+@bot.command()
+async def stop(ctx):
+    voice = discord.utils.get(bot.voice_clients, guild=ctx.guild)
+    voice.stop()
+
+
 
 @bot.command(name="canal")
 async def canal(ctx, nombre):
