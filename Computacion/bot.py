@@ -2,9 +2,11 @@
 
 # libreria para conectar el programa con discord
 import discord
-
 # para poder usar los comandos
 from discord.ext import commands
+import youtube_dl
+import os
+
 
 # el token de nuestro bot. DIFERENTE PARA CADA PERSONA
 TOKEN = 'ODg2Mzg2MDQ3OTcyNDI5ODU1.YT01Vg.shB0MRKrb-d7SqB-_qRZnSoGRK8'
@@ -35,6 +37,7 @@ async def on_ready():
         f'{bot.user} is connected to the following guild:\n'
         f'{guild.name}(id: {guild.id})'
         )
+        
 
 # funcion para contestar mensajes
 @bot.event
@@ -61,6 +64,7 @@ async def on_message(message):
 
 @bot.command()
 async def play(ctx, url : str):
+    
     voiceChannel = discord.utils.get(ctx.guild.voice_channels, name="el_criko_lobby")
     voice = discord.utils.get(bot.voice_clients, guild=ctx.guild)
     if not voice.is_connected():
