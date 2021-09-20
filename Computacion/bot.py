@@ -22,17 +22,12 @@ class MyMusicBot(commands.Bot):
     async def on_ready(self):
         print("Bot is ready")
 
-    async def on_message(self, message):
-        
-
-
-
 
 
 #aqui comprobamos si ya se conecto o no
 @bot.event
 async def on_ready():
-    guild = guild = discord.utils.get(bot.guilds, name=GUILD)
+    guild = discord.utils.get(bot.guilds, name=GUILD)
     print(
         f'{bot.user} is connected to the following guild:\n'
         f'{guild.name}(id: {guild.id})'
@@ -70,7 +65,7 @@ async def play(ctx, url : str):
     if not voice.is_connected():
         await voiceChannel.connect()
 
-@bot.colmmand()
+@bot.command()
 async def leave(ctx):
     voice = discord.utils.get(bot.voice_clients, guild=ctx.guild)
     if voice.is_connected():
