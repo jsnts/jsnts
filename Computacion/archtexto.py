@@ -24,4 +24,4 @@ for i in range(3):
     archTexto.write("IMC: " + str(IMC) + "\n\n")
 
 
-archTexto.close
+archTexto.close()
