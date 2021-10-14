@@ -4,20 +4,23 @@ Hola Bienvenido a la calculadora de IMC
 
 Nombre: Jair
 Edad: 18
-Peso: 56.0
+Peso: 55.0
 Estatura: 1.72
+IMC: 18.591130340724717
 
 **************************************** 
 
 Nombre: Paco
-Edad: 18
+Edad: 19
 Peso: 78.0
-Estatura: 1.9
+Estatura: 1.82
+IMC: 23.54788069073783
 
 **************************************** 
 
-Nombre: Jose
+Nombre: Hugo
 Edad: 20
 Peso: 77.0
 Estatura: 1.72
+IMC: 26.027582477014604
 
