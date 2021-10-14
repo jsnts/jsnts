@@ -23,5 +23,14 @@ for i in range(3):
     archTexto.write("Estatura: " + str(estatura) + "\n")
     archTexto.write("IMC: " + str(IMC) + "\n\n")
 
+archTexto.close()
+
+
+archTexto = open("ArchuviodeTextoej.txt","r")
+
+textoArchivo = archTexto.read()
+
+print(textoArchivo)
 
 archTexto.close()
+
