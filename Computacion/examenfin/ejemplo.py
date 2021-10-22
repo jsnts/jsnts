@@ -10,7 +10,8 @@ while yn != "n":
     print(""" 
     Que accion quiere realizar?
     1) Agregar    2) Borrar
-    3) Cambiar    4) Consultar""")
+    3) Cambiar    4) Consultar
+    """)
     eleccion = int(input("Seleccion: "))
     if eleccion == 1:
         print("Usted eligio agregar un producto.")
