@@ -39,6 +39,7 @@ while sn != "n":
 
 #Esta seccion es la de español        
     elif int(menu) == 3:
+        print("\n\n" + "*"*50 + "\n\n")
         print("Usted eligio la modalidad de Español\n")
         print("A continuacion le van a aparecer diferentes ejercicios de lectura y español vas a tener que responder.\n")
         print(ejercicioesp1)
@@ -67,7 +68,7 @@ while sn != "n":
             print("\nLa quinta pregunta te la sacaste bien!!")
         else:
             print("\nUy, te la sacaste mal.\n")
-        print("*"*60)
+        print("\n\n" + "*"*50 + "\n\n")
         print("\nA continuacion te va a aparecer un ejercicio de español ")
         
         archTexto.seek(854)
@@ -89,6 +90,7 @@ while sn != "n":
                         print("Te la sacaste bien!!\n")
                     elif letras.islower():
                         print("\nUy, te la sacaste mal.\n")
+        print("\nMuy bien has acabado con la modalidad de español, espero que te haya hido muy bien!!\n")
 
         sn = input("Quieres seguir estudiando (s/n): ")
 
