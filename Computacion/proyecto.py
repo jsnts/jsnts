@@ -5,7 +5,7 @@ from os import close
 archTexto = open("proyecto.txt","r")
 #Aqui esta leyendo el archivo de texto para ver los ejercicios
 ejercicioesp1 = archTexto.read(832)
-diccesp = {}
+sentidos = {}
 sn = "s"
 
 
@@ -25,7 +25,7 @@ while sn != "n":
 #Esta seccion es la de mate
     menu = input("Seleccion: ")
     if int(menu) == 1:
-        print("Usted eligio la modalidad de Matematicas")
+        print("Elegiste la modalidad de Matematicas")
         sn = input("Quieres seguir estudiando (s/n): ")
 
 
@@ -33,7 +33,22 @@ while sn != "n":
 
 #Esta seccion es la de ciencias
     elif int(menu) == 2:
-        print("Usted eligio la modalidad de Ciencias")
+        print("Elegiste la modalidad de Ciencias")
+        print("A continuacion te van a aparecer diferentes ejercicios de ciencias y salud que vas a tener que responder.")
+        print("Menciona los 5 organos de los sentidos: ")
+        for i in range(5):
+            sen = str(input("Organo: "))
+            sentidos[sen] = ""
+        print("Muy bien, el siguiente ejercicio va a ser mencionar las funciones de los organos que acabas de mencionar")
+        print(sentidos)
+        organos = sentidos.keys()
+        for elementos in organos:
+            sentidos[elementos] = input("Cual es la funcion de " + elementos + ": ")
+        print(sentidos)
+
+
+
+
         sn = input("Quieres seguir estudiando (s/n): ")
 
 
@@ -43,8 +58,8 @@ while sn != "n":
 #Esta seccion es la de español        
     elif int(menu) == 3:
         print("\n\n" + "*"*50 + "\n\n")
-        print("Usted eligio la modalidad de Español\n")
-        print("A continuacion le van a aparecer diferentes ejercicios de lectura y español vas a tener que responder.\n")
+        print("Elegiste la modalidad de Español\n")
+        print("A continuacion te van a aparecer diferentes ejercicios de lectura y español que vas a tener que responder.\n")
         print(ejercicioesp1)
         espa1 = input("\nRespuesta a la pregunta 1: ")
         if espa1 == "b" or espa1 == "B":
