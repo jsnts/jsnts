@@ -1,4 +1,7 @@
 #Este es el proyecto final de Jair Santos y Bruno Marquez
+from os import close
+
+
 archTexto = open("proyecto.txt","r")
 #Aqui esta leyendo el archivo de texto para ver los ejercicios
 ejercicioesp1 = archTexto.read(832)
@@ -69,12 +72,21 @@ while sn != "n":
         else:
             print("\nUy, te la sacaste mal.\n")
         print("\n\n" + "*"*50 + "\n\n")
+        print("\nA continuacion te va a aparecer otro ejercicio de lectura \n")
+        archTexto.seek(930)
+        ejercicio2esplect = archTexto.read(490)
+        print(ejercicio2esplect)
+        print("\n\nDe la historia anterior describe al personaje principal:")
+        archEscribir = open("proyectodescripcion.txt", "a")
+        archEscribir.write(input(""))
+        archEscribir.close()
+
+        print("\n\n" + "*"*50 + "\n\n")
         print("\nA continuacion te va a aparecer un ejercicio de español ")
-        
-        archTexto.seek(854)
-        ejercicioesp2 = archTexto.read(566)
-        print(ejercicioesp2)
-        archTexto.seek(1438)
+
+        ejercicioesp3 = archTexto.read(564)
+        print(ejercicioesp3)
+        archTexto.seek(2014)
         ejercicioesp2p = archTexto.readlines()
         for elementos in ejercicioesp2p:
             print(elementos)
