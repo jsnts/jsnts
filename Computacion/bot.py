@@ -9,7 +9,7 @@ import os
 
 
 # el token de nuestro bot. DIFERENTE PARA CADA PERSONA
-TOKEN = 'ODg2Mzg2MDQ3OTcyNDI5ODU1.YT01Vg.shB0MRKrb-d7SqB-_qRZnSoGRK8'
+TOKEN = 
 GUILD = 'chivas-zambettifanclub'
 
 # aqui es como queremos usar nuestros comandos
