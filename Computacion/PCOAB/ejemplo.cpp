@@ -14,5 +14,5 @@ int main()
     cin>>x;
     cout<<"Entrar con y ="<<endl;
     cin>>y;
-    cout<<"El resultado es = "<<x<<" + "<<y<<calculaSuma<<endl;
+    cout<<"El resultado es = "<<x<<" + "<<y<<calculaSuma(x, y)<<endl;
 }
