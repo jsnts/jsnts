@@ -18,8 +18,9 @@ void printRandoms(int lower, int upper, int count)
     }
 }
 
-int main(int x, int y)
+int main()
 {
+    int x, y;
     while (x != y);
     cout<<"\nIngresa un numero: "<<endl;
     cin>>y;
