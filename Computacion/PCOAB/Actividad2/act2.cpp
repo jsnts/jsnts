@@ -5,10 +5,7 @@
 
 using namespace std;
 
-int x = 0;
-int y = 0;
-
-void printRandoms(int lower, int upper, int count)
+void printRandoms(int lower, int upper, int count, int x)
 {
     int i;
     for (i=0; i < count; i++) {
