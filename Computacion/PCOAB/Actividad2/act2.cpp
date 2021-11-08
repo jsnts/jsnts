@@ -5,24 +5,33 @@
 
 using namespace std;
 
+int x = 0;
+int y = 0;
+
 void printRandoms(int lower, int upper, int count)
 {
     int i;
     for (i=0; i < count; i++) {
         int num = (rand() %
             (upper - lower +1)) + lower;
-        printf("%d ", num);
+        x = num;
     }
 }
 
-
-int main()
+int main(int x, int y)
 {
-    int lower = 0, upper = 100, count = 1;
-
-    srand(time(0));
-
-    printRandoms(lower, upper, count);
-
-    return 0;
+    while (x != y);
+    cout<<"\nIngresa un numero: "<<endl;
+    cin>>y;
+    if (y == x){
+        cout<<"\nEl numero "<<y<<" que elegiste fue el correcto."<<endl;
+    }
+    else if (y < x){
+        cout<<"El numero que elegiste es menor al correcto, elige otra vez: "<<endl;
+        cin>>y;
+    }
+    else if (y > x){
+        cout<<"El numero que elegiste es mayor al correcto, elige otra vez: "<<endl;
+        cin>>y;
+    }
 }
