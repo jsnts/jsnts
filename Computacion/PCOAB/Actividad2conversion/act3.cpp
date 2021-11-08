@@ -12,12 +12,12 @@ int conversion(int cel){
 int main()
 {
     int veces, cel;
-    cout<<"Cuantos valores quieres convertir: "<<endl;
+    cout<<"\nCuantos valores quieres convertir: "<<endl;
     cin>>veces;
     int i;
     for (i = 1; i <= veces; i++)
         {
-            cout<<"Cual es el numero en celsius: "<<endl;
+            cout<<"\nCual es el numero en celsius: "<<endl;
             cin>>cel;
             conversion(cel);
         }
