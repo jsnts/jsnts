@@ -3,7 +3,7 @@
 using namespace std;
 
 int conversion(int cel){   
-    int far = ((9/5) * cel) + 32;
+    int far = (9.0/5.0) * cel + 32;
     printf("\nFarenheit: %i", far);
     printf("\nCelsius: %i", cel);
     return 0;
