@@ -4,8 +4,8 @@ using namespace std;
 
 int conversion(int cel){   
     int far = ((9/5) * cel) + 32;
-    printf("\nFarenheit: " + far);
-    printf("\nCelsius: " + cel);
+    printf("\nFarenheit: %i", far);
+    printf("\nCelsius: %i", cel);
     return 0;
 }
 
