@@ -1,0 +1,46 @@
+%% SECCIÓN: ejemplo syms
+clear;
+clc;
+syms a b c x res;
+y = a*x^2 + b*x + c
+R = solve(y,x) % solución
+derivada_y = diff(y,x)  % derivada
+segunda_derivada_y = diff(derivada_y,x)  % derivada
+integral_y = int(y,x)  % integral
+integral_de_la_derivada_y = int(derivada_y,x)  % integral de la derivada
+integral_de_la_derivada_y___expand = 
+%% EJEMPLOS VARIOS
+% Elaborado por Lourdes Macario
+% Profesor del curso: F1005B 
+% Noviembre 2020
+%
+% Se sugiere ejecutar sección por sección
+
+clear;
+clc;
+clf;
+
+%% SECCIÓN: ejemplo syms
+clear;
+clc;
+%syms a b c x res;
+%x=3;
+syms x;
+a=8; b=4; c=10;
+y = a*x^2 + b*x + c
+R = solve(y,x)
+
+%% SECCIÓN: ejemplo syms
+clear;
+clc;
+syms a b c x res;
+y = a*x^2 + b*x + c
+R = solve(y,x) % solución
+derivada_y = diff(y,x)  % derivada
+segunda_derivada_y = diff(derivada_y,x)  % derivada
+integral_y = int(y,x)  % integral
+integral_de_la_derivada_y = int(derivada_y,x)  % integral de la derivada
+integral_de_la_derivada_y___expand = expand(integral_de_la_derivada_y)
+integral_de_la_derivada_y___factor = factor(integral_de_la_derivada_y___expand)
+integral_de_la_derivada_y___simplify = simplify(integral_de_la_derivada_y___expand)
+res = int(y, [1 5])

@@ -8,7 +8,7 @@
             "name": "(gdb) Iniciar",
             "type": "cppdbg",
             "request": "launch",
-            "program": "C:/Users/Omen/Desktop/github/Computacion/PCOAB/ejemplo.cpp",
+            "program": "C:/Users/Omen/Desktop/github/Computacion/fgxdhjxch.cpp",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
